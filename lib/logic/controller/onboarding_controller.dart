@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../core/constant/routes/route.dart';
+import '../../core/services/services.dart';
 import '../../data/data_source/static/onboarding_static.dart';
 
 
@@ -15,14 +16,14 @@ class OnBoardingControllerImp extends OnBoardingController {
 
   int currentPage = 0;
 
- // MyServices myServices = Get.find() ; 
+  MyServices myServices = Get.find() ; 
 
   @override
   next() {
     currentPage++;
 
     if (currentPage > onBoardingList.length - 1) {
-     //  myServices.getStorage.write("step", "1") ; 
+       myServices.getStorage.write("step", "1") ; 
        Get.offAllNamed(AppRoute.home) ; 
     } else {
       pageController.animateToPage(currentPage,

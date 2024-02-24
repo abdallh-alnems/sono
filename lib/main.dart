@@ -5,15 +5,17 @@ import 'core/constant/color.dart';
 import 'core/constant/routes/get_page.dart';
 import 'core/localization/change_local.dart';
 import 'core/localization/translation.dart';
+import 'core/services/services.dart';
 import 'logic/bindings/initial_bindings.dart';
 
 void main() async {
-  
   WidgetsFlutterBinding.ensureInitialized();
+
+  await initialServices();
 
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: AppColor.backgroundcolor,
-    statusBarIconBrightness:  Brightness.dark,
+    statusBarIconBrightness: Brightness.dark,
   ));
   runApp(const MyApp());
 }
@@ -26,7 +28,6 @@ class MyApp extends StatelessWidget {
     LocaleController controller = Get.put(LocaleController());
 
     return GetMaterialApp(
-      
       initialBinding: InitialBindings(),
       debugShowCheckedModeBanner: false,
       translations: MyTranslation(),

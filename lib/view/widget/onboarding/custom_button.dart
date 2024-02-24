@@ -13,7 +13,7 @@ class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
           padding: EdgeInsets.only(
             bottom: Get.width * 0.06,
             right: Get.width * 0.05,
-            left: Get.width * 0.06,
+            left: Get.width * 0.05,
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -32,10 +32,9 @@ class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
                       )),
               MaterialButton(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(Get.width * 0.05),
+                    borderRadius: BorderRadius.circular(20),
                   ),
                   elevation: 0,
-                
                   textColor: AppColor.buttonText,
                   onPressed: () {
                     controller.next();
