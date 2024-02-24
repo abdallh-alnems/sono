@@ -4,31 +4,36 @@ import '../../core/constant/routes/route.dart';
 import '../../core/services/services.dart';
 import '../../data/data_source/static/onboarding_static.dart';
 
-
 abstract class OnBoardingController extends GetxController {
   next();
   onPageChanged(int index);
+  skip();
 }
 
 class OnBoardingControllerImp extends OnBoardingController {
-
   late PageController pageController;
 
   int currentPage = 0;
 
-  MyServices myServices = Get.find() ; 
+  MyServices myServices = Get.find();
 
   @override
   next() {
     currentPage++;
 
     if (currentPage > onBoardingList.length - 1) {
-       myServices.getStorage.write("step", "1") ; 
-       Get.offAllNamed(AppRoute.home) ; 
+      myServices.getStorage.write("step", "1");
+      Get.offAllNamed(AppRoute.home);
     } else {
       pageController.animateToPage(currentPage,
           duration: const Duration(milliseconds: 900), curve: Curves.easeInOut);
     }
+  }
+
+  @override
+  skip() {
+    myServices.getStorage.write("step", "1");
+    Get.offAllNamed(AppRoute.home);
   }
 
   @override

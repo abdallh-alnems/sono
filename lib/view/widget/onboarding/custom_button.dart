@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../core/constant/color.dart';
-import '../../../core/constant/routes/route.dart';
 import '../../../logic/controller/onboarding_controller.dart';
 
 class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
@@ -25,7 +24,7 @@ class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
                     )
                   : GestureDetector(
                       onTap: () {
-                        Get.offAllNamed(AppRoute.home);
+                        controller.skip();
                       },
                       child: Text(
                         '9'.tr,
