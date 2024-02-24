@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'core/localization/changelocal.dart';
+import 'core/constant/color.dart';
+import 'core/constant/routes/get_page.dart';
+import 'core/localization/change_local.dart';
 import 'core/localization/translation.dart';
-import 'view/screen/home.dart';
-import 'view/screen/onboarding.dart';
+import 'logic/bindings/initial_bindings.dart';
 
-void main() {
+void main() async {
+  
+  WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: AppColor.backgroundcolor,
+    statusBarIconBrightness:  Brightness.dark,
+  ));
   runApp(const MyApp());
 }
 
@@ -17,10 +26,12 @@ class MyApp extends StatelessWidget {
     LocaleController controller = Get.put(LocaleController());
 
     return GetMaterialApp(
+      
+      initialBinding: InitialBindings(),
       debugShowCheckedModeBanner: false,
       translations: MyTranslation(),
       locale: controller.language,
-      home: OnBoarding(),
+      getPages: routes,
     );
   }
 }

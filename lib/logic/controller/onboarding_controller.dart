@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../core/constant/routes/route.dart';
 import '../../data/data_source/static/onboarding_static.dart';
 
 
@@ -22,7 +23,7 @@ class OnBoardingControllerImp extends OnBoardingController {
 
     if (currentPage > onBoardingList.length - 1) {
      //  myServices.getStorage.write("step", "1") ; 
-     //  Get.offAllNamed(AppRoute.login) ; 
+       Get.offAllNamed(AppRoute.home) ; 
     } else {
       pageController.animateToPage(currentPage,
           duration: const Duration(milliseconds: 900), curve: Curves.easeInOut);

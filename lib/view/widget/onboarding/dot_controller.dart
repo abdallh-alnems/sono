@@ -10,21 +10,27 @@ class CustomDotControllerOnBoarding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<OnBoardingControllerImp>(
-        builder: (controller) => Row(
+        builder: (controller) => Padding(
+            padding: EdgeInsets.only(top: Get.height * 0.13),
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ...List.generate(
                     onBoardingList.length,
                     (index) => AnimatedContainer(
-                          margin: const EdgeInsets.only(right: 5),
-                          duration: const Duration(milliseconds: 900),
-                          width: controller.currentPage == index ? 20 : 5,
-                          height: 6,
+                          margin: EdgeInsets.only(right: Get.width * 0.02),
+                          duration: const Duration(milliseconds: 550),
+                          width: controller.currentPage == index
+                              ? Get.width * 0.1
+                              : Get.width * 0.018,
+                          height: Get.height * 0.008,
                           decoration: BoxDecoration(
-                              color: AppColor.primaryColor,
-                              borderRadius: BorderRadius.circular(10)),
+                            color: AppColor.primaryColor,
+                            borderRadius:
+                                BorderRadius.circular(Get.width * 0.01),
+                          ),
                         ))
               ],
-            ));
+            )));
   }
 }
