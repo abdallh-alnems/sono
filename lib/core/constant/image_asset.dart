@@ -3,15 +3,20 @@ class AppImageAsset {
 // ============================ root ===============================
   static const String rootImages = "assets/images";
 
+
 // ============================ onBoarding =========================
   static const String onBoardingImageBuyingCar = "$rootImages/buying_car.png";
   static const String onBoardingImageSellingCar = "$rootImages/selling_car.png";
   static const String onBoardingImageRentalCar = "$rootImages/rental_car.png";
 
-  static const String rootLottie = "assets/lottie";
-  static const String logo = "$rootImages/logoapp.png";
 
-  static const String saleOne = "$rootImages/001-sale.png";
+  // ============================ home =========================
+    static const String home = "$rootImages/filter_home.png";
+
+
+  static const String rootLottie = "assets/lottie";
+
+  static const String saleOne = "$rootImages/filter_home.png";
   static const String saleTwo = "$rootImages/002-sale-tag.png";
   static const String saleThree = "$rootImages/003-sale-1.png";
 
