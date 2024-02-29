@@ -14,17 +14,20 @@ class OnBoarding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Get.put(OnBoardingControllerImp());
-    return Scaffold(
-      body: SafeArea(
-        child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
-          SkipButton(),
-          Expanded(
-            child: CustomSliderOnBoarding(),
-          ),
-          CustomDotControllerOnBoarding(),
-          CustomButtonOnBoarding(),
-        ]),
-      ),
-    );
+    return GetBuilder<OnBoardingControllerImp>(
+        builder: (_) => Scaffold(
+              body: SafeArea(
+                child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      SkipButton(),
+                      Expanded(
+                        child: CustomSliderOnBoarding(),
+                      ),
+                      CustomDotControllerOnBoarding(),
+                      CustomButtonOnBoarding(),
+                    ]),
+              ),
+            ));
   }
 }

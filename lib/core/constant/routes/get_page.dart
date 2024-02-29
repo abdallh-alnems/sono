@@ -8,7 +8,7 @@ import 'route.dart';
 List<GetPage<dynamic>>? routes = [
   GetPage(
     name: "/", page: () => const OnBoarding(),
-   //  middlewares: [MyMiddleWare()]
+    // middlewares: [MyMiddleWare()]
   ),
-  GetPage(name: AppRoute.bottomNavBar, page: () =>  MyBottomNavBar()),
+ // GetPage(name: AppRoute.bottomNavBar, page: () =>  MyBottomNavBar()),
 ];

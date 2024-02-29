@@ -19,12 +19,6 @@ class BottomNavControllerImp extends BottomNavBarController {
     Account(),
   ];
 
-  List<BottomNavigationBarItem> bottomNavBar = [
-    BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-    BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Favorite"),
-    BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Setting"),
-    BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Profile"),
-  ];
 
   @override
   changePage(currentPages) {
