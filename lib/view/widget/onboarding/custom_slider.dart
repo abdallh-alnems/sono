@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import '../../../core/constant/color.dart';
 import '../../../data/data_source/static/onboarding_static.dart';
@@ -9,6 +10,9 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+
     return PageView.builder(
         controller: controller.pageController,
         onPageChanged: (val) {
@@ -17,40 +21,33 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
         itemCount: onBoardingList.length,
         itemBuilder: (context, i) => Column(
               children: [
-                Container(
-                  padding: EdgeInsets.only(
-                    top: Get.height * 0.03,
-                  ),
-                  child: Image.asset(
-                    onBoardingList[i].image!,
-                    height: Get.height / 2.3,
-                    width: Get.height * 0.8,
-                    fit: BoxFit.fill,
-                  ),
+                Image.asset(
+                  onBoardingList[i].image!,
+                  width: screenWidth,
+                  height: screenHeight * .4,
+                  fit: BoxFit.fill,
                 ),
                 SizedBox(
-                  height: Get.height * 0.06,
+                  height: screenHeight * .04,
                 ),
                 Text(onBoardingList[i].title!,
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: Get.width * 0.05,
+                        fontSize: 15.sp,
                         color: AppColor.black)),
                 SizedBox(
-                  height: Get.width * 0.05,
+                  height: screenHeight * .03,
                 ),
-                Container(
-                    padding: EdgeInsets.symmetric(horizontal: Get.width * 0.07),
-                    width: double.infinity,
-                    alignment: Alignment.center,
+                Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 15),
                     child: Text(
                       onBoardingList[i].body!,
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        height: Get.height * 0.0025,
+                        height: screenHeight * .003,
                         color: AppColor.textColor,
                         fontWeight: FontWeight.bold,
-                        fontSize: Get.width * 0.035,
+                        fontSize: 11.sp,
                       ),
                     )),
               ],

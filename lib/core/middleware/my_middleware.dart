@@ -13,7 +13,7 @@ class MyMiddleWare extends GetMiddleware {
   RouteSettings? redirect(String? route) {
 
     if (myServices.getStorage.read("step") == "1") {
-      return const RouteSettings(name: AppRoute.home);
+      return const RouteSettings(name: AppRoute.bottomNavBar);
     }
 
     return null;

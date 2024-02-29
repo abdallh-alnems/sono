@@ -6,6 +6,7 @@ import '../../logic/controller/onboarding_controller.dart';
 import '../widget/onboarding/custom_button.dart';
 import '../widget/onboarding/custom_slider.dart';
 import '../widget/onboarding/dot_controller.dart';
+import '../widget/onboarding/skip_button.dart';
 
 class OnBoarding extends StatelessWidget {
   const OnBoarding({Key? key}) : super(key: key);
@@ -14,14 +15,16 @@ class OnBoarding extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(OnBoardingControllerImp());
     return Scaffold(
-      backgroundColor: AppColor.backgroundcolor,
-      body: Column(children: [
-        CustomDotControllerOnBoarding(),
-        Expanded(
-          child: CustomSliderOnBoarding(),
-        ),
-        CustomButtonOnBoarding(),
-      ]),
+      body: SafeArea(
+        child: Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
+          SkipButton(),
+          Expanded(
+            child: CustomSliderOnBoarding(),
+          ),
+          CustomDotControllerOnBoarding(),
+          CustomButtonOnBoarding(),
+        ]),
+      ),
     );
   }
 }

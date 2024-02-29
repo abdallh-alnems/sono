@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import '../../../core/constant/color.dart';
 import '../../../logic/controller/onboarding_controller.dart';
@@ -9,41 +10,24 @@ class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
   Widget build(BuildContext context) {
     return GetBuilder<OnBoardingControllerImp>(builder: (_) {
       return Padding(
-          padding: EdgeInsets.only(
-            bottom: Get.width * 0.06,
-            right: Get.width * 0.05,
-            left: Get.width * 0.05,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              controller.currentPage == 2
-                  ? Text(
-                      '9'.tr,
-                      style: TextStyle(color: AppColor.disable),
-                    )
-                  : GestureDetector(
-                      onTap: () {
-                        controller.skip();
-                      },
-                      child: Text(
-                        '9'.tr,
-                      )),
-              MaterialButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  elevation: 0,
-                  textColor: AppColor.buttonText,
-                  onPressed: () {
-                    controller.next();
-                  },
+        padding: EdgeInsets.only(
+          bottom: 13,
+        ),
+        child: Center(
+          child: MaterialButton(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+                side: BorderSide(
                   color: AppColor.primaryColor,
-                  child: controller.currentPage == 2
-                      ? Text('8'.tr)
-                      : Text("7".tr)),
-            ],
-          ));
+                ),
+              ),
+              minWidth: MediaQuery.of(context).size.width * 0.5,
+              onPressed: () {
+                controller.next();
+              },
+              child: controller.currentPage != 2 ? Text("7".tr) : Text('8'.tr)),
+        ),
+      );
     });
   }
 }
