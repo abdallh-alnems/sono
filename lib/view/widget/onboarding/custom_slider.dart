@@ -24,7 +24,7 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
                 Image.asset(
                   onBoardingList[i].image!,
                   width: screenWidth,
-                  height: screenHeight * .4,
+                  height: screenHeight * .43,
                   fit: BoxFit.fill,
                 ),
                 SizedBox(
@@ -39,12 +39,13 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
                   height: screenHeight * .03,
                 ),
                 Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 15),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: screenWidth * .05),
                     child: Text(
                       onBoardingList[i].body!,
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        height: screenHeight * .003,
+                        height: screenHeight * .0025,
                         color: AppColor.textColor,
                         fontWeight: FontWeight.bold,
                         fontSize: 11.sp,

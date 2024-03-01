@@ -10,21 +10,25 @@ class CustomDotControllerOnBoarding extends GetView<OnBoardingControllerImp> {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Padding(
-        padding: EdgeInsets.only(bottom: 51),
+        padding: EdgeInsets.only(bottom: screenHeight * .075),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ...List.generate(
                 onBoardingList.length,
                 (index) => AnimatedContainer(
-                      margin: EdgeInsets.only(right: 5),
+                      margin: EdgeInsets.only(right: screenWidth * .013),
                       duration: const Duration(milliseconds: 550),
-                      width: controller.currentPage == index ? 31.w : 6.w,
-                      height: 5.h,
+                      width: controller.currentPage == index
+                          ? screenWidth * .09
+                          : screenWidth * .015,
+                      height: screenWidth * .015,
                       decoration: BoxDecoration(
                         color: AppColor.primaryColor,
-                        borderRadius: BorderRadius.circular(15),
+                        borderRadius: BorderRadius.circular(20.r),
                       ),
                     ))
           ],

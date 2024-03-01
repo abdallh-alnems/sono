@@ -1,5 +1,6 @@
 class EnglishTranslations {
   static const Map<String, String> en = {
+    // ============================ onBoarding =========================
     "1": "Buy the best",
     "2":
         "You will find the perfect car according to your needs, by browsing a wide range of cars",
@@ -12,6 +13,14 @@ class EnglishTranslations {
     "7": "Continue",
     "8": "Get started",
     "9": "Skip",
-    '10': 'Search Here'
+
+    // ============================ search ==============================
+    '10': 'Search Here',
+
+    // ============================ bottom nav bar ==============================
+    "11": "Home",
+    "12": "Chats",
+    "13": "My Ads",
+    "14": "Account"
   };
 }

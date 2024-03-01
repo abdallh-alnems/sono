@@ -11,6 +11,7 @@ import 'core/services/services.dart';
 import 'logic/bindings/initial_bindings.dart';
 
 void main() async {
+  
   WidgetsFlutterBinding.ensureInitialized();
 
   await initialServices();

@@ -19,6 +19,19 @@ class BottomNavControllerImp extends BottomNavBarController {
     Account(),
   ];
 
+  List<String> listOfStrings = [
+    '11'.tr,
+    '12'.tr,
+    '13'.tr,
+    '14'.tr,
+  ];
+
+  List<IconData> listOfIcons = [
+    Icons.home,
+    Icons.chat,
+    Icons.list,
+    Icons.person_rounded,
+  ];
 
   @override
   changePage(currentPages) {

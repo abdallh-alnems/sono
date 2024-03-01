@@ -8,23 +8,33 @@ class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
   const CustomButtonOnBoarding({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
     return Padding(
       padding: EdgeInsets.only(
-        bottom: 13,
+        bottom: screenHeight * .02,
       ),
       child: Center(
         child: MaterialButton(
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(20.r),
               side: BorderSide(
                 color: AppColor.primaryColor,
               ),
             ),
-            minWidth: MediaQuery.of(context).size.width * 0.5,
+            minWidth: screenWidth * 0.5,
             onPressed: () {
               controller.next();
             },
-            child: controller.currentPage != 2 ? Text("7".tr) : Text('8'.tr)),
+            child: controller.currentPage != 2
+                ? Text(
+                    "7".tr,
+                    style: TextStyle(fontSize: 13.sp),
+                  )
+                : Text(
+                    '8'.tr,
+                    style: TextStyle(fontSize: 13.sp),
+                  )),
       ),
     );
   }

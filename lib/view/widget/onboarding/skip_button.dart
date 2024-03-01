@@ -8,8 +8,12 @@ class SkipButton extends GetView<OnBoardingControllerImp> {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+
     return Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 27, vertical: 19),
+        padding: EdgeInsets.symmetric(
+            horizontal: screenWidth * .07, vertical: screenHeight * .017),
         child: controller.currentPage != 2
             ? GestureDetector(
                 onTap: () {
