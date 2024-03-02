@@ -21,6 +21,10 @@ class EnglishTranslations {
     "11": "Home",
     "12": "Chats",
     "13": "My Ads",
-    "14": "Account"
+    "14": "Account",
+
+    // ============================ exit to app ================================
+    "15": "Tap again to exit !",
+
   };
 }

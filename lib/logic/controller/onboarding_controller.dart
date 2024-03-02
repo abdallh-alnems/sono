@@ -23,7 +23,7 @@ class OnBoardingControllerImp extends OnBoardingController {
 
     if (currentPage > onBoardingList.length - 1) {
       myServices.getStorage.write("step", "1");
-      Get.offAllNamed(AppRoute.bottomNavBar);
+      Get.offAllNamed(AppRoute.homeScreen);
     } else {
       pageController.animateToPage(currentPage,
           duration: const Duration(milliseconds: 900), curve: Curves.easeInOut);
@@ -33,7 +33,7 @@ class OnBoardingControllerImp extends OnBoardingController {
   @override
   skip() {
     myServices.getStorage.write("step", "1");
-    Get.offAllNamed(AppRoute.bottomNavBar);
+    Get.offAllNamed(AppRoute.homeScreen);
   }
 
   @override

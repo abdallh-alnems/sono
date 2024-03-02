@@ -1,6 +1,6 @@
 class AppRoute {
     // Home
-  static const String bottomNavBar = "/myBottomNavigationBar";
+  static const String homeScreen = "/homeScreen";
     
   // static const String login = "/login";
   // static const String onBoarding = "/onboarding";

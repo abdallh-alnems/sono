@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import '../../../core/constant/color.dart';
-import '../../../logic/controller/bottom_navigation_bar_controller.dart';
+import '../../../logic/controller/home_screen_controller.dart';
 import 'animated_container.dart';
 
-class ViewBuilderBottomNavBar extends GetView<BottomNavControllerImp> {
-  const ViewBuilderBottomNavBar({super.key});
+class MyBottomNavBar extends GetView<HomeScreenControllerImp> {
+  const MyBottomNavBar({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
+    
     int currentPage = controller.currentPage;
 
     return Container(

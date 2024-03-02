@@ -5,11 +5,11 @@ import '../../view/screen/advertisements.dart';
 import '../../view/screen/chats.dart';
 import '../../view/screen/home_page.dart';
 
-abstract class BottomNavBarController extends GetxController {
+abstract class HomeScreenController extends GetxController {
   changePage(int currentPages);
 }
 
-class BottomNavControllerImp extends BottomNavBarController {
+class HomeScreenControllerImp extends HomeScreenController {
   int currentPage = 0;
 
   List<Widget> listPage = [
