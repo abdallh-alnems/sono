@@ -4,8 +4,7 @@ import '../constant/routes/route.dart';
 import '../services/services.dart';
 
 class MyMiddleWare extends GetMiddleware {
-  @override
-  int? get priority => 1;
+
 
   MyServices myServices = Get.find();
 
