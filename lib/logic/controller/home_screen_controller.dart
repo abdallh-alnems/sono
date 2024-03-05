@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import '../../view/screen/account.dart';
 import '../../view/screen/advertisements.dart';
 import '../../view/screen/chats.dart';
-import '../../view/screen/home_page.dart';
+import '../../view/screen/home_page/home_page.dart';
 
 abstract class HomeScreenController extends GetxController {
   changePage(int currentPages);

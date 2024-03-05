@@ -4,13 +4,15 @@ import 'package:get/get.dart';
 import 'package:sono/core/constant/color.dart';
 import 'package:sono/core/constant/image_asset.dart';
 
+import '../filter.dart';
+import '../text_form_field.dart';
+
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
 
     return Column(
       children: [
@@ -54,47 +56,13 @@ class CustomAppBar extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Expanded(
-                  child: TextFormField(
-                // controller: mycontroller,
-                // onChanged: onChanged,
-                decoration: InputDecoration(
-                  hintText: '10'.tr,
-                  prefixIcon: Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: screenWidth * .01),
-                    child: IconButton(
-                        icon: Icon(
-                          Icons.search,
-                          color: AppColor.primaryColor,
-                          size: 21.sp,
-                        ),
-                        onPressed: () {}),
-                  ),
-                  border: OutlineInputBorder(
-                      borderSide: BorderSide.none,
-                      borderRadius: BorderRadius.circular(40)),
-                  filled: true,
-                  fillColor: AppColor.backGroundIcon,
-                  contentPadding:
-                      EdgeInsets.symmetric(vertical: screenHeight * .017),
-                ),
-              )),
+              MyTextFormField(
+                hintText: "10".tr,
+              ),
               SizedBox(
                 width: screenWidth * .05,
               ),
-              Container(
-                width: 53,
-                height: 53,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30.r),
-                  color: AppColor.backGroundIcon,
-                ),
-                child: Image.asset(
-                  AppImageAsset.home,
-                  scale: 1.35,
-                ),
-              )
+              Filter(),
             ],
           ),
         )

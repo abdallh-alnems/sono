@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../core/constant/color.dart';
-import '../widget/home_page/custom_appbar.dart';
+import '../../../core/constant/color.dart';
+import '../../widget/home_page/custom_appbar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

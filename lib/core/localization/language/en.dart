@@ -15,8 +15,10 @@ class EnglishTranslations {
     "9": "Skip",
 
     // ============================ search ==============================
+    // home
     '10': 'Search Here',
-
+    // chats
+    "16": "search in ",
     // ============================ bottom nav bar ==============================
     "11": "Home",
     "12": "Chats",
@@ -25,6 +27,5 @@ class EnglishTranslations {
 
     // ============================ exit to app ================================
     "15": "Tap again to exit !",
-
   };
 }

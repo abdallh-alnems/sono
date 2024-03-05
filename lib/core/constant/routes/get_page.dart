@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import '../../../view/screen/home_screen.dart';
-import '../../../view/screen/home_page.dart';
+import '../../../view/screen/home_page/home_page.dart';
 import '../../../view/screen/onboarding.dart';
 import '../../middleware/my_middleware.dart';
 import 'route.dart';
