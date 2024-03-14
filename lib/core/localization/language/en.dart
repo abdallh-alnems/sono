@@ -27,5 +27,8 @@ class EnglishTranslations {
 
     // ============================ exit to app ================================
     "15": "Tap again to exit !",
+    // ============================ favorite ===================================
+    "17": "Favorite ads",
+    "18": "Notifications",
   };
 }

@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     LocaleController controller = Get.put(LocaleController());
 
     return ScreenUtilInit(

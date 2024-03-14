@@ -1,7 +1,18 @@
 class AppRoute {
-    // Home
+
+    static const String test = "/test";
+
+  // ============================== Home screen ================================
   static const String homeScreen = "/homeScreen";
-    
+
+  // ============================== Home page ==================================
+
+  static const String favorites = "/favorites";
+
+  static const String notifications = "/notifications";
+
+  static const String add = "/add";
+
   // static const String login = "/login";
   // static const String onBoarding = "/onboarding";
   // static const String signUp = "/signup";

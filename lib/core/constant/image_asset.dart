@@ -1,18 +1,14 @@
 class AppImageAsset {
-
 // ============================ root ===============================
   static const String rootImages = "assets/images";
-
 
 // ============================ onBoarding =========================
   static const String onBoardingImageBuyingCar = "$rootImages/buying_car.png";
   static const String onBoardingImageSellingCar = "$rootImages/selling_car.png";
   static const String onBoardingImageRentalCar = "$rootImages/rental_car.png";
 
-
-  // ============================ home =========================
-    static const String home = "$rootImages/filter_home.png";
-
+// ============================ home page =========================
+  static const String home = "$rootImages/filter_home.png";
 
   static const String rootLottie = "assets/lottie";
 

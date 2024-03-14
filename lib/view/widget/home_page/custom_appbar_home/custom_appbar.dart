@@ -3,9 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:sono/core/constant/color.dart';
 import 'package:sono/core/constant/image_asset.dart';
+import 'package:sono/core/constant/routes/route.dart';
+import 'package:sono/view/widget/home_page/custom_appbar_home/icon_appbar.dart';
 
+import '../../../screen/home_page/icons_home/favorite.dart';
 import '../filter.dart';
-import '../text_form_field.dart';
+import '../../text_form_field.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
@@ -23,27 +26,25 @@ class CustomAppBar extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.favorite_outline,
-                        color: AppColor.primaryColor,
-                        size: 21.sp,
-                      )),
-                  IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.notifications_none,
-                        color: AppColor.primaryColor,
-                        size: 21.sp,
-                      )),
-                  IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.add,
-                        color: AppColor.primaryColor,
-                        size: 21.sp,
-                      )),
+                  IconAppBar(
+                    onPressed: () {
+                     Get.toNamed(AppRoute.favorites);
+                     
+                    },
+                    icon: Icons.favorite_outline,
+                  ),
+                  IconAppBar(
+                    onPressed: () {
+                      Get.toNamed(AppRoute.notifications);
+                    },
+                    icon: Icons.notifications_none,
+                  ),
+                  IconAppBar(
+                    onPressed: () {
+                      Get.toNamed(AppRoute.add);
+                    },
+                    icon: Icons.add,
+                  ),
                 ],
               ),
               Text('Sono')
