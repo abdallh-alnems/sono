@@ -9,9 +9,9 @@ import 'core/localization/change_local.dart';
 import 'core/localization/translation.dart';
 import 'core/services/services.dart';
 import 'logic/bindings/initial_bindings.dart';
+import 'main_screen.dart';
 
 void main() async {
-  
   WidgetsFlutterBinding.ensureInitialized();
 
   await initialServices();
@@ -20,11 +20,7 @@ void main() async {
     statusBarColor: AppColor.backgroundcolor,
     statusBarIconBrightness: Brightness.dark,
   ));
-  runApp(
-    DevicePreview(
-      builder: (context) => MyApp(),
-    ),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -32,7 +28,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     LocaleController controller = Get.put(LocaleController());
 
     return ScreenUtilInit(
@@ -41,7 +36,6 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         builder: (context, child) {
           return GetMaterialApp(
-            builder: DevicePreview.appBuilder,
             initialBinding: InitialBindings(),
             debugShowCheckedModeBanner: false,
             translations: MyTranslation(),

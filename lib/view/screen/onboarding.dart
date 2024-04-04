@@ -13,6 +13,7 @@ class OnBoarding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     Get.put(OnBoardingControllerImp());
     return GetBuilder<OnBoardingControllerImp>(
         builder: (_) => Scaffold(
