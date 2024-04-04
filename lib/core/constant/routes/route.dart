@@ -4,6 +4,8 @@ class AppRoute {
 
   // ============================== Home screen ================================
   static const String homeScreen = "/homeScreen";
+    static const String onBoarding = "/onBoarding";
+
 
   // ============================== Home page ==================================
 

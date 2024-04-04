@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../core/constant/color.dart';
 
 class CustomButtonLang extends StatelessWidget {
-  final String textbutton;
+  final String textButton;
   final void Function()? onPressed;
-  const CustomButtonLang({Key? key, required this.textbutton, this.onPressed})
+  const CustomButtonLang({Key? key, required this.textButton, this.onPressed})
       : super(key: key);
 
   @override
@@ -17,7 +17,7 @@ class CustomButtonLang extends StatelessWidget {
         color: AppColor.primaryColor,
         textColor: Colors.white,
         onPressed: onPressed,
-        child: Text(textbutton,
+        child: Text(textButton,
             style: const TextStyle(fontWeight: FontWeight.bold)),
       ),
     );

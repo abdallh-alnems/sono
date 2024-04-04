@@ -6,6 +6,7 @@ import '../../../view/screen/home_page/icons_home/favorite.dart';
 import '../../../view/screen/home_page/icons_home/notifications.dart';
 import '../../../view/screen/home_screen.dart';
 import '../../../view/screen/home_page/home_page.dart';
+import '../../../view/screen/language.dart';
 import '../../../view/screen/onboarding.dart';
 import '../../middleware/my_middleware.dart';
 import 'route.dart';
@@ -17,7 +18,10 @@ List<GetPage<dynamic>> routes = [
   // ============================== root =======================================
 
   GetPage(
-      name: "/", page: () => const OnBoarding(), middlewares: [MyMiddleWare()]),
+      name: "/", page: () => const Language(), middlewares: [MyMiddleWare()]),
+        GetPage(name: AppRoute.onBoarding, page: () => OnBoarding()),
+
+      
 
   // ============================== Home screen ================================
 
