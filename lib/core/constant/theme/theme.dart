@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import '../../localization/change_local.dart';
+import '../../utilization/change_local.dart';
 import '../../services/services.dart';
 import 'color.dart';
 import 'custom_themes/app_bar_theme.dart';

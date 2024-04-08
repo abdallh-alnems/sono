@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import '../localization/change_local.dart';
+import '../utilization/change_local.dart';
 
 class MyServices extends GetxService {
   late GetStorage getStorage;

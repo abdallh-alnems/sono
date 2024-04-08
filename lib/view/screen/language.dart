@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../core/constant/routes/route.dart';
 import '../../core/constant/theme/theme.dart';
-import '../../core/localization/change_local.dart';
+import '../../core/utilization/change_local.dart';
 import '../../core/services/services.dart';
 import '../widget/language/custom_button_lang.dart';
 
