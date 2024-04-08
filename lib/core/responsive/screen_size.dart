@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class ScreenUtils {
+class ScreenSize
+ {
+
   static double screenHeight = 0.0;
   static double screenWidth = 0.0;
   static double blockSizeHorizontal = 0.0;
@@ -15,5 +17,4 @@ class ScreenUtils {
   }
 }
 
-
-    //  ScreenUtils.init(context);
+    //  ScreenSize.init(context);

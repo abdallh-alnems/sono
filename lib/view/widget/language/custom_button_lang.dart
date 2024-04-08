@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/constant/color.dart';
+import '../../../core/constant/theme/color.dart';
+import '../../../core/responsive/screen_size.dart';
 
 class CustomButtonLang extends StatelessWidget {
   final String textButton;
@@ -10,8 +11,10 @@ class CustomButtonLang extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
+
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 80),
+      padding:  EdgeInsets.symmetric(horizontal: ScreenSize.blockSizeHorizontal * 27,vertical: ScreenSize.blockSizeVertical * 2 ),
       width: double.infinity,
       child: MaterialButton(
         color: AppColor.primaryColor,

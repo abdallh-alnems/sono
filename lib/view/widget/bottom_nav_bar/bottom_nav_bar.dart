@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import '../../../core/constant/color.dart';
+import '../../../core/constant/theme/color.dart';
 import '../../../logic/controller/home_screen_controller.dart';
 import 'animated_container.dart';
 

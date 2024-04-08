@@ -1,38 +1,45 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-
-import '../constant/apptheme.dart';
 import '../services/services.dart';
 
 class LocaleController extends GetxController {
   Locale? language;
+  String? getStorageLang;
+  ThemeMode? themeMode;
+  String? getStorageTheme;
 
-  MyServices myServices = Get.find();
+  MyServices myServices = Get.find<MyServices>();
 
-   ThemeData appTheme = themeEnglish;
+
 
   changeLang(String codeLang) {
     Locale locale = Locale(codeLang);
     myServices.getStorage.write("lang", codeLang);
-     appTheme = codeLang == "ar" ? themeArabic : themeEnglish;
-     Get.changeTheme(appTheme);
     Get.updateLocale(locale);
   }
 
   @override
   void onInit() {
-    // String? getStorageLang = myServices.getStorage.read('lang');
-    // if (getStorageLang == "ar") {
-    //   language = const Locale("ar");
-    //   //  appTheme = themeArabic;
-    // } else if (getStorageLang == "en") {
-    //   language = const Locale("en");
-    //   // appTheme = themeEnglish;
-    // } else {
-    //   language = Locale(Get.deviceLocale!.languageCode);
-    //   //  appTheme = themeEnglish;
-    // }
-    language = Locale(Get.deviceLocale!.languageCode);
+    getStorageTheme = myServices.getStorage.read("themeMode");
+    if (getStorageTheme == "darkTheme") {
+      themeMode = ThemeMode.dark;
+    } else if (getStorageTheme == "lightTheme") {
+      themeMode = ThemeMode.light;
+
+    } else {
+      themeMode = ThemeMode.system;
+
+    }
+
+    getStorageLang = myServices.getStorage.read("lang");
+    if (getStorageLang == "ar") {
+      language = const Locale("ar");
+    } else {
+      language = const Locale("en");
+    }
+    
     super.onInit();
   }
+
 }

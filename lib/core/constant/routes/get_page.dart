@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 
+import '../../../main_screen.dart';
 import '../../../test.dart';
 import '../../../view/screen/home_page/icons_home/add_ads/add.dart';
 import '../../../view/screen/home_page/icons_home/favorite.dart';
@@ -12,16 +13,13 @@ import '../../middleware/my_middleware.dart';
 import 'route.dart';
 
 List<GetPage<dynamic>> routes = [
-
-    GetPage(name: AppRoute.test, page: () => Test()),
+  // GetPage(name: AppRoute.test, page: () => Test()),
 
   // ============================== root =======================================
 
   GetPage(
-      name: "/", page: () => const Language(), middlewares: [MyMiddleWare()]),
-        GetPage(name: AppRoute.onBoarding, page: () => OnBoarding()),
-
-      
+      name: "/", page: () => const MainScreen(), middlewares: [MyMiddleWare()]),
+  GetPage(name: AppRoute.onBoarding, page: () => OnBoarding()),
 
   // ============================== Home screen ================================
 

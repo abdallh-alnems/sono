@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../core/constant/color.dart';
+import '../../core/constant/theme/color.dart';
 import '../../logic/controller/onboarding_controller.dart';
 import '../widget/onboarding/custom_button.dart';
 import '../widget/onboarding/custom_slider.dart';
