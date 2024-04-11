@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import '../../../core/constant/theme/color.dart';
+import '../../../core/constant/theme/color/general_color.dart';
 import '../../../logic/controller/home_screen_controller.dart';
 import 'animated_container.dart';
 
@@ -10,20 +10,19 @@ class MyBottomNavBar extends GetView<HomeScreenControllerImp> {
 
   @override
   Widget build(BuildContext context) {
-
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
-    
+
     int currentPage = controller.currentPage;
 
     return Container(
       margin: EdgeInsets.all(screenWidth * .05),
       height: screenHeight * .07,
       decoration: BoxDecoration(
-        color: AppColor.backGroundIcon,
+        color: GeneralAppColor.backGroundIcon,
         borderRadius: BorderRadius.circular(50.r),
       ),
-      child: ListView.builder( 
+      child: ListView.builder(
         itemCount: 4,
         scrollDirection: Axis.horizontal,
         padding: EdgeInsets.symmetric(horizontal: screenWidth * .02),
@@ -39,7 +38,7 @@ class MyBottomNavBar extends GetView<HomeScreenControllerImp> {
                 width: index == currentPage ? screenWidth * .32 : 0,
                 height: index == currentPage ? screenHeight * .05 : 0,
                 color: index == currentPage
-                    ? AppColor.primaryColor.withOpacity(.8)
+                    ? GeneralAppColor.primaryColor.withOpacity(.8)
                     : Colors.transparent,
                 circular: 50.r,
               ),
@@ -63,7 +62,7 @@ class MyBottomNavBar extends GetView<HomeScreenControllerImp> {
                           ? '${controller.listOfStrings[index]}'
                           : '',
                       style: TextStyle(
-                        color: AppColor.backgroundcolor,
+                        color: GeneralAppColor.backgroundcolor,
                         fontWeight: FontWeight.w600,
                         fontSize: 15.sp,
                       ),
@@ -81,7 +80,7 @@ class MyBottomNavBar extends GetView<HomeScreenControllerImp> {
                       controller.listOfIcons[index],
                       size: 25.sp,
                       color: index == controller.currentPage
-                          ? AppColor.backgroundcolor
+                          ? GeneralAppColor.backgroundcolor
                           : Colors.black26,
                     ),
                   ],

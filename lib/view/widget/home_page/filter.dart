@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-import '../../../core/constant/theme/color.dart';
+import '../../../core/constant/theme/color/general_color.dart';
 import '../../../core/constant/image_asset.dart';
 
 class Filter extends StatelessWidget {
@@ -15,7 +15,7 @@ class Filter extends StatelessWidget {
       height: 53,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30.r),
-        color: AppColor.backGroundIcon,
+        color: GeneralAppColor.backGroundIcon,
       ),
       child: Image.asset(
         AppImageAsset.home,

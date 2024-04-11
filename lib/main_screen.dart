@@ -11,8 +11,8 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ResponsiveLayout(
-          mobileBody: Language(),
-          tabletBody: Language(),
+          mobileBody: HomeScreen(),
+          tabletBody: HomeScreen(),
           webBody: Container(
               color: Colors.red,
               child: (Center(

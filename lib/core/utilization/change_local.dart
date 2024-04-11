@@ -33,10 +33,10 @@ class LocaleController extends GetxController {
     }
 
     getStorageLang = myServices.getStorage.read("lang");
-    if (getStorageLang == "ar") {
-      language = const Locale("ar");
-    } else {
+    if (getStorageLang == "en") {
       language = const Locale("en");
+    } else {
+      language = const Locale("ar");
     }
     
     super.onInit();

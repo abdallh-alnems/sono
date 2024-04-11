@@ -1,41 +1,45 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import '../../../core/constant/theme/color.dart';
+import '../../../core/constant/theme/color/general_color.dart';
+import '../../../core/functions/theme_text_button_color.dart';
+import '../../../core/responsive/base_widget.dart';
+import '../../../core/responsive/responsive_layout.dart';
+import '../../../core/responsive/screen_size.dart';
 import '../../../logic/controller/onboarding_controller.dart';
 
 class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
   const CustomButtonOnBoarding({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
-    return Padding(
-      padding: EdgeInsets.only(
-        bottom: screenHeight * .02,
+    double horizontal = ScreenSize.blockSizeHorizontal;
+    return Container(
+      padding: EdgeInsets.symmetric(
+        vertical: ScreenSize.blockSizeVertical * 2,
+        horizontal: BaseWidget.isTablet()
+            ? horizontal * 25
+            : horizontal * 10,
       ),
-      child: Center(
-        child: MaterialButton(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20.r),
-              side: BorderSide(
-                color: AppColor.primaryColor,
-              ),
-            ),
-            minWidth: screenWidth * 0.5,
-            onPressed: () {
-              controller.next();
-            },
-            child: controller.currentPage != 2
-                ? Text(
-                    "7".tr,
-                    style: TextStyle(fontSize: 13.sp),
-                  )
-                : Text(
-                    '8'.tr,
-                    style: TextStyle(fontSize: 13.sp),
-                  )),
-      ),
+      width: ScreenSize.screenWidth,
+      child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.transparent,
+              foregroundColor: getTextButtonColor(context),
+              shape: RoundedRectangleBorder(
+                side: BorderSide(
+                  color: GeneralAppColor.primaryColor,
+                ),
+              )),
+          onPressed: () {
+            controller.next();
+          },
+          child: controller.currentPage != 4
+              ? Text(
+                  "OnBoContinue".tr,
+                )
+              : Text(
+                  'OnBoStart'.tr,
+                )),
     );
   }
 }

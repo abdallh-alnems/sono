@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:sono/core/constant/theme/color.dart';
+import 'package:sono/core/constant/theme/color/general_color.dart';
 import 'package:sono/core/constant/image_asset.dart';
 import 'package:sono/core/constant/routes/route.dart';
 import 'package:sono/view/screen/onboarding.dart';

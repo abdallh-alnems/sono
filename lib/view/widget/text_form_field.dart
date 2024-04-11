@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-import '../../core/constant/theme/color.dart';
+import '../../core/constant/theme/color/general_color.dart';
 
 class MyTextFormField extends StatelessWidget {
   final String hintText;
@@ -23,7 +23,7 @@ class MyTextFormField extends StatelessWidget {
             child: IconButton(
                 icon: Icon(
                   Icons.search,
-                  color: AppColor.primaryColor,
+                  color: GeneralAppColor.primaryColor,
                   size: 21.sp,
                 ),
                 onPressed: () {}),
@@ -32,7 +32,7 @@ class MyTextFormField extends StatelessWidget {
               borderSide: BorderSide.none,
               borderRadius: BorderRadius.circular(40)),
           filled: true,
-          fillColor: AppColor.backGroundIcon,
+          fillColor: GeneralAppColor.backGroundIcon,
           contentPadding: EdgeInsets.symmetric(vertical: screenHeight * .017),
         ),
       ),

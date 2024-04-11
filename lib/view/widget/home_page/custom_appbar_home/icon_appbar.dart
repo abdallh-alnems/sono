@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/constant/theme/color.dart';
+import '../../../../core/constant/theme/color/general_color.dart';
 
 class IconAppBar extends StatelessWidget {
   final Function() onPressed;
@@ -14,7 +14,7 @@ class IconAppBar extends StatelessWidget {
         onPressed: onPressed,
         icon: Icon(
           icon,
-          color: AppColor.primaryColor,
+          color: GeneralAppColor.primaryColor,
           size: 21.sp,
         ));
   }

@@ -1,11 +1,20 @@
 class AppImageAsset {
 // ============================ root ===============================
   static const String rootImages = "assets/images";
+  static const String onboardingImage = "assets/images/onboarding";
 
 // ============================ onBoarding =========================
-  static const String onBoardingImageBuyingCar = "$rootImages/buying_car.png";
-  static const String onBoardingImageSellingCar = "$rootImages/selling_car.png";
-  static const String onBoardingImageRentalCar = "$rootImages/rental_car.png";
+  static const String onBoardingImageBuyingCar =
+      "$onboardingImage/buying_car.png";
+  static const String onBoardingImageSellingCar =
+      "$onboardingImage/selling_car.png";
+  static const String onBoardingImageRentalCar =
+      "$onboardingImage/rental_car.png";
+  static const String onBoardingImageMaintenance =
+      "$onboardingImage/rental_car.png";
+
+  static const String onBoardingImageMotorcycle =
+      "$onboardingImage/motorcycle.png";
 
 // ============================ home page =========================
   static const String home = "$rootImages/filter_home.png";

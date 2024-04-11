@@ -19,6 +19,7 @@ List<GetPage<dynamic>> routes = [
 
   GetPage(
       name: "/", page: () => const MainScreen(), middlewares: [MyMiddleWare()]),
+      
   GetPage(name: AppRoute.onBoarding, page: () => OnBoarding()),
 
   // ============================== Home screen ================================

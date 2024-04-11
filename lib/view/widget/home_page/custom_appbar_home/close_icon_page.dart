@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import '../../../../core/constant/theme/color.dart';
+import '../../../../core/constant/theme/color/general_color.dart';
 
 class CloseIconPage extends StatelessWidget {
   const CloseIconPage({super.key});
@@ -15,7 +15,7 @@ class CloseIconPage extends StatelessWidget {
       child: IconButton(
         icon: Icon(
           Icons.close,
-          color: AppColor.primaryColor,
+          color: GeneralAppColor.primaryColor,
           size: 23.sp,
         ),
         onPressed: () {

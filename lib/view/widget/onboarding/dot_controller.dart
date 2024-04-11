@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import '../../../core/constant/theme/color.dart';
+import '../../../core/constant/theme/color/general_color.dart';
+import '../../../core/responsive/base_widget.dart';
+import '../../../core/responsive/screen_size.dart';
 import '../../../data/data_source/static/onboarding_static.dart';
 import '../../../logic/controller/onboarding_controller.dart';
 
@@ -10,28 +12,36 @@ class CustomDotControllerOnBoarding extends GetView<OnBoardingControllerImp> {
 
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
+    double width = ScreenSize.screenWidth;
+    double horizontal = ScreenSize.blockSizeHorizontal;
+    double vertical = ScreenSize.blockSizeVertical;
+    bool base = BaseWidget.isTablet();
+
     return Padding(
-        padding: EdgeInsets.only(bottom: screenHeight * .075),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ...List.generate(
-                onBoardingList.length,
-                (index) => AnimatedContainer(
-                      margin: EdgeInsets.only(right: screenWidth * .013),
-                      duration: const Duration(milliseconds: 550),
-                      width: controller.currentPage == index
-                          ? screenWidth * .09
-                          : screenWidth * .015,
-                      height: screenWidth * .015,
-                      decoration: BoxDecoration(
-                        color: AppColor.primaryColor,
-                        borderRadius: BorderRadius.circular(20.r),
-                      ),
-                    ))
-          ],
-        ));
+      padding: EdgeInsets.only(bottom: vertical * 7),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ...List.generate(
+              onBoardingList.length,
+              (index) => AnimatedContainer(
+                    margin: EdgeInsets.only(right: horizontal * 1.3),
+                    duration: const Duration(milliseconds: 550),
+                    width: controller.currentPage == index
+                        ? base
+                            ? width * .07
+                            : width * .09
+                        : base
+                            ? width * .009
+                            : width * .015,
+                    height: base ? width * .009 : width * .015,
+                    decoration: BoxDecoration(
+                      color: GeneralAppColor.primaryColor,
+                      borderRadius: BorderRadius.circular(20.r),
+                    ),
+                  ))
+        ],
+      ),
+    );
   }
 }

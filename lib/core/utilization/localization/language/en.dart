@@ -1,18 +1,32 @@
 class EnglishTranslations {
   static const Map<String, String> en = {
     // ============================ onBoarding =========================
-    "1": "Buy the best",
-    "2":
+   
+    /// OnBo => OnBoarding ///
+
+    //title
+    "titleOnBoBuying": "Buy the best",
+    "titleOnBoSelling": "Fast sale",
+    "titleOnBoRental": "Easy rent",
+    "titleOnBoMaintenance": "Spare parts",
+    "titleOnBoMotorcycle": "Motorcycles",
+
+     //body
+    "bodyOnBoBuying":
         "You will find the perfect car according to your needs, by browsing a wide range of cars",
-    "3": "Fast sale",
-    "4":
+    "bodyOnBoSelling":
         "Sell your car quickly and easily through attractive ads and comprehensive information , with a powerful search system",
-    "5": "Easy rent",
-    "6":
+    "bodyOnBoRental":
         "A smooth and fast car rental experience, where you can easily choose and reserve your favorite car",
-    "7": "Continue",
-    "8": "Get started",
-    "9": "Skip",
+    "bodyOnBoMaintenance":
+        "Browse a wide range of spare parts and choose the best one for your needs",
+    "bodyOnBoMotorcycle":
+        "There is a wide range of motorcycles. Find the motorcycle of your dreams",
+
+    //button
+    "OnBoContinue": "Continue",
+    "OnBoStart": "Get started",
+    "OnBoSkip": "Skip",
 
     // ============================ search ==============================
     // home

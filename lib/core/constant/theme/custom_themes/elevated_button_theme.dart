@@ -1,26 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../responsive/base_widget.dart';
+import '../color/general_color.dart';
 
-class EElevatedButtonTheme{
+class EElevatedButtonTheme {
+  static bool get size => BaseWidget.isTablet();
 
-  static ElevatedButtonThemeData lightElevatedButtonTheme() => ElevatedButtonThemeData(
- style: ElevatedButton.styleFrom(
-  elevation: 0,
-  foregroundColor: Colors.white,
-  backgroundColor: Colors.blue,
-  textStyle: TextStyle(fontSize: 16.sp)
- )
-   
-  );
+  static ElevatedButtonThemeData lightElevatedButtonTheme() =>
+      ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+              elevation: 0,
+              foregroundColor: GeneralAppColor.buttonTextColor,
+              backgroundColor: GeneralAppColor.buttonColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(0),
+              ),
+              textStyle: TextStyle(fontSize: size ? 9.sp : 19.sp)));
 
-  static ElevatedButtonThemeData darkElevatedButtonTheme() => ElevatedButtonThemeData(
-  style: ElevatedButton.styleFrom(
-  elevation: 0,
-  foregroundColor: Colors.white,
-  backgroundColor: Colors.blue,
-  textStyle: TextStyle(fontSize: 16.sp)
- )
-   
-      );
-
+  static ElevatedButtonThemeData darkElevatedButtonTheme() =>
+      ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+              elevation: 0,
+              foregroundColor: GeneralAppColor.buttonTextColor,
+              backgroundColor: GeneralAppColor.buttonColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(0),
+              ),
+              textStyle: TextStyle(fontSize: size ? 9.sp : 19.sp)));
 }

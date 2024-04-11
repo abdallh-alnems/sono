@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import '../../core/constant/theme/color.dart';
+import '../../core/constant/theme/color/general_color.dart';
 
 class ArrowBack extends StatelessWidget {
   const ArrowBack({super.key});
@@ -15,7 +15,7 @@ class ArrowBack extends StatelessWidget {
       child: IconButton(
         icon: Icon(
           Icons.arrow_back_ios,
-          color: AppColor.primaryColor,
+          color: GeneralAppColor.primaryColor,
           size: 21.sp,
         ),
         onPressed: () {

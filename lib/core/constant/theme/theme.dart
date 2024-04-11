@@ -3,7 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import '../../utilization/change_local.dart';
 import '../../services/services.dart';
-import 'color.dart';
+import 'color/general_color.dart';
+import 'color/dark_color.dart';
+import 'color/light_color.dart';
 import 'custom_themes/app_bar_theme.dart';
 import 'custom_themes/elevated_button_theme.dart';
 import 'custom_themes/icon_theme.dart';
@@ -13,13 +15,13 @@ import 'custom_themes/text_theme.dart';
 class AppTheme {
   static LocaleController controller = Get.find<LocaleController>();
   static String fontFamily =
-      controller.getStorageLang == "en" ? "PlayfairDisplay" : "Cairo";
+      controller.getStorageLang == "ar" ? "Cairo" : "PlayfairDisplay";
 
   static ThemeData lightTheme() => ThemeData(
         fontFamily: fontFamily,
         useMaterial3: true,
         brightness: Brightness.light,
-        primarySwatch: AppColor.primarySwatchColor,
+        primarySwatch: GeneralAppColor.primarySwatchColor,
         textTheme: TTextTheme.lightTextTheme(),
         appBarTheme: AAppBarTheme.lightAppBarTheme(),
         elevatedButtonTheme: EElevatedButtonTheme.lightElevatedButtonTheme(),
@@ -31,7 +33,7 @@ class AppTheme {
         fontFamily: fontFamily,
         useMaterial3: true,
         brightness: Brightness.dark,
-        primarySwatch: AppColor.primarySwatchColor,
+        primarySwatch: GeneralAppColor.primarySwatchColor,
         textTheme: TTextTheme.darkTextTheme(),
         appBarTheme: AAppBarTheme.darkAppBarTheme(),
         elevatedButtonTheme: EElevatedButtonTheme.darkElevatedButtonTheme(),

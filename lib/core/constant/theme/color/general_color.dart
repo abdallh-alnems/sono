@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppColor {
+class GeneralAppColor {
   // ============================== Primary Swatch Color =======================
 
   static MaterialColor primarySwatchColor = MaterialColor(
@@ -18,20 +18,22 @@ class AppColor {
       900: const Color(0xffe74c3c).withOpacity(1),
     },
   );
+  // ============================= button ======================================
 
-  // ==================  scaffold back ground color ============================
+  static const Color buttonColor = Color(0xffe74c3c);
 
-  static const Color scaffoldColorLight = Color(0xFF202124);
-
-  static const Color scaffoldColorDark = Color(0xFF202124);
+  static const Color buttonTextColor = Colors.white;
 
   // ============================== text =======================================
 
-  static const Color textHeader = Color(0xff000000);
+  static const Color textBodyColor = Color(0xff8e8e8e);
 
-  static const Color textBody = Color(0xff8e8e8e);
+  static const Color lightTextTitle = Color(0xff000000);
 
-  static const Color textColor = Color(0xff8e8e8e);
+  static const Color darkTextTitle = Colors.white;
+
+  static const Color lightTextBody = Color(0xff8e8e8e);
+
   static const Color black = Color(0xff000000);
   static const Color disable = Color.fromARGB(255, 198, 195, 195);
   // static Color backGroundIcon = Colors.grey[300];
@@ -39,8 +41,4 @@ class AppColor {
 
   static const Color backgroundcolor = Colors.white;
   static const Color primaryColor = Color(0xffe74c3c);
-
-  // static const Color secondColor = Color(0xffc0392b);
-  // static const Color fourthColor = Color(0xff0d3056);
-  // static const Color thirdColor = Color.fromARGB(255, 255, 179, 170);
 }

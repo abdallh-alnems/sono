@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../core/constant/theme/color.dart';
+import '../../core/constant/theme/color/general_color.dart';
 import '../../logic/controller/onboarding_controller.dart';
 import '../widget/onboarding/custom_button.dart';
 import '../widget/onboarding/custom_slider.dart';
@@ -13,7 +13,6 @@ class OnBoarding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     Get.put(OnBoardingControllerImp());
     return GetBuilder<OnBoardingControllerImp>(
         builder: (_) => Scaffold(
