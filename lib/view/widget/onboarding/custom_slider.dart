@@ -23,8 +23,31 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
           controller.onPageChanged(val);
         },
         itemCount: onBoardingList.length,
-        itemBuilder: (context, i) => BaseWidget.isTablet()
-            ? Row(
+        itemBuilder: (context, i) => BaseWidget.isMobile()
+            ? Column(
+                children: [
+                  Image.asset(
+                    onBoardingList[i].image!,
+                    width: width,
+                    height: height * .43,
+                    fit: BoxFit.fill,
+                  ),
+                  SizedBox(
+                    height: height * .04,
+                  ),
+                  Text(onBoardingList[i].title!,
+                       style: Theme.of(context).textTheme.titleMedium),
+                  SizedBox(
+                    height: height * .03,
+                  ),
+                  Padding(
+                      padding: EdgeInsets.symmetric(horizontal: horizontal * 5),
+                      child: Text(onBoardingList[i].body!,
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.bodyLarge)),
+                ],
+              )
+            : Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Image.asset(
@@ -49,29 +72,6 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
                       ],
                     ),
                   ),
-                ],
-              )
-            : Column(
-                children: [
-                  Image.asset(
-                    onBoardingList[i].image!,
-                    width: width,
-                    height: height * .43,
-                    fit: BoxFit.fill,
-                  ),
-                  SizedBox(
-                    height: height * .04,
-                  ),
-                  Text(onBoardingList[i].title!,
-                       style: Theme.of(context).textTheme.titleMedium),
-                  SizedBox(
-                    height: height * .03,
-                  ),
-                  Padding(
-                      padding: EdgeInsets.symmetric(horizontal: horizontal * 5),
-                      child: Text(onBoardingList[i].body!,
-                          textAlign: TextAlign.center,
-                          style: Theme.of(context).textTheme.bodyLarge)),
                 ],
               ));
   }

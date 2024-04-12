@@ -10,7 +10,7 @@ class SkipButton extends GetView<OnBoardingControllerImp> {
 
   @override
   Widget build(BuildContext context) {
-       bool  size = BaseWidget.isTablet();
+       bool  size = BaseWidget.isMobile();
 
   double horizontal = ScreenSize.blockSizeHorizontal;
     double vertical = ScreenSize.blockSizeVertical;
@@ -24,7 +24,7 @@ class SkipButton extends GetView<OnBoardingControllerImp> {
                 },
                 child: Text(
                   'OnBoSkip'.tr,
-                  style: TextStyle(fontSize:size ? 10.sp : 15.sp),
+                  style: TextStyle(fontSize:size ? 15.sp : 10.sp),
                 ))
             : Text(
                 '',

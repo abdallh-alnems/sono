@@ -16,9 +16,9 @@ class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
     return Container(
       padding: EdgeInsets.symmetric(
         vertical: ScreenSize.blockSizeVertical * 2,
-        horizontal: BaseWidget.isTablet()
-            ? horizontal * 25
-            : horizontal * 10,
+        horizontal: BaseWidget.isMobile()
+            ? horizontal * 10
+            : horizontal * 25,
       ),
       width: ScreenSize.screenWidth,
       child: ElevatedButton(

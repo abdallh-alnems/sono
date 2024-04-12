@@ -12,10 +12,10 @@ class CustomButtonLang extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double horizontal = ScreenSize.blockSizeHorizontal;
-    bool size = BaseWidget.isTablet();
+    bool size = BaseWidget.isMobile();
     return Container(
       padding: EdgeInsets.symmetric(
-          horizontal: size ? horizontal * 31 : horizontal * 21,
+          horizontal: size ? horizontal * 21 : horizontal * 31,
           vertical: ScreenSize.blockSizeVertical * 2),
       width: double.infinity,
       child: ElevatedButton(

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../responsive/base_widget.dart';
+import '../../../responsive/responsive_text.dart';
 import '../color/general_color.dart';
 
 class EElevatedButtonTheme {
-  static bool get size => BaseWidget.isTablet();
 
   static ElevatedButtonThemeData lightElevatedButtonTheme() =>
       ElevatedButtonThemeData(
@@ -15,7 +15,7 @@ class EElevatedButtonTheme {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0),
               ),
-              textStyle: TextStyle(fontSize: size ? 19.sp : 9.sp)));
+              textStyle: TextStyle(fontSize: getSizeText(19.sp,9.sp  ,0))));
 
   static ElevatedButtonThemeData darkElevatedButtonTheme() =>
       ElevatedButtonThemeData(
@@ -26,5 +26,5 @@ class EElevatedButtonTheme {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0),
               ),
-              textStyle: TextStyle(fontSize: size ? 19.sp : 9.sp)));
+              textStyle: TextStyle(fontSize: getSizeText(19.sp,9.sp  ,0))));
 }
