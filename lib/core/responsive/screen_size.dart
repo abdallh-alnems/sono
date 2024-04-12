@@ -16,5 +16,3 @@ class ScreenSize
     blockSizeVertical = screenHeight / 100;
   }
 }
-
-    //  ScreenSize.init(context);

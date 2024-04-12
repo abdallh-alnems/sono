@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:sono/core/constant/routes/route.dart';
 import '../../../widget/arrow_back.dart';
-import '../../../widget/home_page/custom_appbar_home/close_icon_page.dart';
+import '../../../widget/close_icon_page.dart';
 
 class Favorites extends StatelessWidget {
   const Favorites({super.key});

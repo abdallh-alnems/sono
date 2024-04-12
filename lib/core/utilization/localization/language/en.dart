@@ -4,14 +4,14 @@ class EnglishTranslations {
 
     /// OnBo => OnBoarding ///
 
-    //title
+    // title
     "titleOnBoBuying": "Buy the best",
     "titleOnBoSelling": "Fast sale",
     "titleOnBoRental": "Easy rent",
     "titleOnBoMaintenance": "Spare parts",
     "titleOnBoMotorcycle": "Motorcycles",
 
-    //body
+    // body
     "bodyOnBoBuying":
         "You will find the perfect car according to your needs, by browsing a wide range of cars",
     "bodyOnBoSelling":
@@ -23,7 +23,7 @@ class EnglishTranslations {
     "bodyOnBoMotorcycle":
         "There is a wide range of motorcycles. Find the motorcycle of your dreams",
 
-    //button
+    // button
     "OnBoContinue": "Continue",
     "OnBoStart": "Get started",
     "OnBoSkip": "Skip",
@@ -34,8 +34,11 @@ class EnglishTranslations {
     "tap": "Tap again to exit !",
 
     // ============================ search ==============================
+   
+    /// sc => search ///
+
     // home
-    '10': 'Search Here',
+    "scHome": "Search in Sono",
     // chats
     "16": "search in ",
     // ============================ bottom nav bar ==============================

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import '../../../core/constant/theme/color/general_color.dart';
-import '../../../core/functions/theme_text_button_color.dart';
+import '../../../core/functions/get_theme_color.dart';
 import '../../../core/responsive/base_widget.dart';
 import '../../../core/responsive/responsive_layout.dart';
 import '../../../core/responsive/screen_size.dart';
@@ -24,7 +24,7 @@ class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.transparent,
-              foregroundColor: getTextButtonColor(context),
+             foregroundColor: getThemeColor(context),
               shape: RoundedRectangleBorder(
                 side: BorderSide(
                   color: GeneralAppColor.primaryColor,

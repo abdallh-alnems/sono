@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../core/constant/theme/color/general_color.dart';
-import '../../widget/home_page/custom_appbar_home/custom_appbar.dart';
+import '../../widget/custom_appbar/appbar_mobile.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

@@ -4,21 +4,24 @@ import 'package:get/get.dart';
 
 import '../../../core/constant/theme/color/general_color.dart';
 import '../../../core/constant/image_asset.dart';
+import '../../../core/responsive/screen_size.dart';
 
 class Filter extends StatelessWidget {
   const Filter({super.key});
 
   @override
   Widget build(BuildContext context) {
+        double width = ScreenSize.screenWidth;
+
     return Container(
-      width: 53,
-      height: 53,
+      width: 51,
+      height: 51,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(30.r),
+        shape: BoxShape.circle,
         color: GeneralAppColor.backGroundIcon,
       ),
       child: Image.asset(
-        AppImageAsset.home,
+        AppImageAsset.filterAppBar,
         scale: 1.35,
       ),
     );

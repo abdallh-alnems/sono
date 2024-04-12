@@ -4,14 +4,14 @@ class ArabicTranslations {
 
     /// OnBo => OnBoarding ///
 
-    //title
+    // title
     "titleOnBoBuying": "شراء الأفضل",
     "titleOnBoSelling": "بيع سريع",
     "titleOnBoRental": "ايجار سهل",
     "titleOnBoMaintenance": "قطع غيار",
     "titleOnBoMotorcycle": "موتوسيكلات",
 
-    //body
+    // body
     "bodyOnBoBuying":
         "ستجد السيارة المثالية حسب احتياجاتك ، وذلك من خلال تصفح مجموعة واسعة من السيارات",
     "bodyOnBoSelling":
@@ -23,19 +23,24 @@ class ArabicTranslations {
     "bodyOnBoMotorcycle":
         "هناك مجموعة واسعة من الموتوسيكلات ابحث عن موتوسيكل احلامك",
 
-    //button
+    // button
     "OnBoContinue": "متابعة",
     "OnBoStart": "ابداء",
     "OnBoSkip": "تخطى",
 
-    // ============================ package =====================================
+    // ============================ package ====================================
 
-    /// tap to exit ///
+    // tap to exit
     "tap": "اضغط مرة اخري للخروج !",
 
     // ============================ search =====================================
+
+    /// sc => search ///
+
     // home
-    "10": "بتدور علي ايه",
+    "scHome": "ابحث فى سونو",
+
+    
     // chats
     "16": "ابحث في الدردشة",
     // ============================ bottom nav bar =============================

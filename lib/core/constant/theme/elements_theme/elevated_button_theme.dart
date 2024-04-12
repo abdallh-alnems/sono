@@ -15,7 +15,7 @@ class EElevatedButtonTheme {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0),
               ),
-              textStyle: TextStyle(fontSize: size ? 9.sp : 19.sp)));
+              textStyle: TextStyle(fontSize: size ? 19.sp : 9.sp)));
 
   static ElevatedButtonThemeData darkElevatedButtonTheme() =>
       ElevatedButtonThemeData(
@@ -26,5 +26,5 @@ class EElevatedButtonTheme {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0),
               ),
-              textStyle: TextStyle(fontSize: size ? 9.sp : 19.sp)));
+              textStyle: TextStyle(fontSize: size ? 19.sp : 9.sp)));
 }

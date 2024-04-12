@@ -13,14 +13,7 @@ class MainScreen extends StatelessWidget {
       body: ResponsiveLayout(
           mobileBody: HomeScreen(),
           tabletBody: HomeScreen(),
-          webBody: Container(
-              color: Colors.red,
-              child: (Center(
-                child: (Text(
-                  "desktop",
-                  style: TextStyle(fontSize: 45),
-                )),
-              )))),
+          webBody: HomeScreen()),
     );
   }
 }

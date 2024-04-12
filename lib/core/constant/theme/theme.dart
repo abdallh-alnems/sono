@@ -6,11 +6,11 @@ import '../../services/services.dart';
 import 'color/general_color.dart';
 import 'color/dark_color.dart';
 import 'color/light_color.dart';
-import 'custom_themes/app_bar_theme.dart';
-import 'custom_themes/elevated_button_theme.dart';
-import 'custom_themes/icon_theme.dart';
-import 'custom_themes/text_filed_theme.dart';
-import 'custom_themes/text_theme.dart';
+import 'elements_theme/app_bar_theme.dart';
+import 'elements_theme/elevated_button_theme.dart';
+import 'elements_theme/icon_theme.dart';
+import 'elements_theme/text_filed_theme.dart';
+import 'elements_theme/text_theme.dart';
 
 class AppTheme {
   static LocaleController controller = Get.find<LocaleController>();

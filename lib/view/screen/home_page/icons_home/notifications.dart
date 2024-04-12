@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../widget/home_page/custom_appbar_home/close_icon_page.dart';
+import '../../../widget/close_icon_page.dart';
 
 class Notifications extends StatelessWidget {
   const Notifications({super.key});

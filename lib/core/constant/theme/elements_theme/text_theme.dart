@@ -17,7 +17,7 @@ class TTextTheme {
           fontSize: size ? 15.sp : 25.sp,
           fontWeight: FontWeight.w400,
         ),
-           titleMedium: TextStyle(
+        titleMedium: TextStyle(
           fontSize: size ? 13.sp : 19.sp,
         ),
         bodyLarge: TextStyle(
@@ -32,7 +32,7 @@ class TTextTheme {
           fontSize: size ? 15.sp : 25.sp,
           fontWeight: FontWeight.w400,
         ),
-         titleMedium: TextStyle(
+        titleMedium: TextStyle(
           fontSize: size ? 13.sp : 19.sp,
         ),
         bodyLarge: TextStyle(
