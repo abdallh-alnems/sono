@@ -1,8 +1,8 @@
-import 'package:double_tap_to_exit/double_tap_to_exit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:sono/core/constant/theme/color/general_color.dart';
+import '../../core/package/tap_to_exit.dart';
 import '../../core/responsive/screen_size.dart';
 import '../../logic/controller/home_screen_controller.dart';
 import '../widget/bottom_nav_bar/bottom_nav_bar.dart';
@@ -17,18 +17,8 @@ class HomeScreen extends StatelessWidget {
     Get.find<HomeScreenControllerImp>();
 
     return GetBuilder<HomeScreenControllerImp>(builder: (controller) {
-      return DoubleTapToExit(
-        snackBar: SnackBar(
-          content: Text(
-            '15'.tr,
-            style: TextStyle(fontSize: 13),
-          ),
-          behavior: SnackBarBehavior.floating,
-          elevation: 0,
-          margin: EdgeInsets.symmetric(
-              vertical: ScreenSize.screenHeight * .11,
-              horizontal: screenWidth * .15),
-        ),
+      return TapToExit(
+       
         child: Scaffold(
           body: controller.listPage.elementAt(controller.currentPage),
           bottomNavigationBar: MyBottomNavBar(),

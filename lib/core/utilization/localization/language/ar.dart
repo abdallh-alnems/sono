@@ -1,9 +1,9 @@
 class ArabicTranslations {
   static const Map<String, String> ar = {
     // ============================ onBoarding =================================
-   
+
     /// OnBo => OnBoarding ///
-   
+
     //title
     "titleOnBoBuying": "شراء الأفضل",
     "titleOnBoSelling": "بيع سريع",
@@ -22,10 +22,16 @@ class ArabicTranslations {
         "تصفح مجموعة واسعة من قطع الغيار واختر الأفضل لاحتياجاتك",
     "bodyOnBoMotorcycle":
         "هناك مجموعة واسعة من الموتوسيكلات ابحث عن موتوسيكل احلامك",
+
     //button
     "OnBoContinue": "متابعة",
     "OnBoStart": "ابداء",
     "OnBoSkip": "تخطى",
+
+    // ============================ package =====================================
+
+    /// tap to exit ///
+    "tap": "اضغط مرة اخري للخروج !",
 
     // ============================ search =====================================
     // home

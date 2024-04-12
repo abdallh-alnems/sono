@@ -1,7 +1,7 @@
 class EnglishTranslations {
   static const Map<String, String> en = {
     // ============================ onBoarding =========================
-   
+
     /// OnBo => OnBoarding ///
 
     //title
@@ -11,7 +11,7 @@ class EnglishTranslations {
     "titleOnBoMaintenance": "Spare parts",
     "titleOnBoMotorcycle": "Motorcycles",
 
-     //body
+    //body
     "bodyOnBoBuying":
         "You will find the perfect car according to your needs, by browsing a wide range of cars",
     "bodyOnBoSelling":
@@ -27,6 +27,11 @@ class EnglishTranslations {
     "OnBoContinue": "Continue",
     "OnBoStart": "Get started",
     "OnBoSkip": "Skip",
+
+    // ============================ package =====================================
+
+    /// tap to exit ///
+    "tap": "Tap again to exit !",
 
     // ============================ search ==============================
     // home
