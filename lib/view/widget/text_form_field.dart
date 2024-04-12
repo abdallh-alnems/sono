@@ -30,8 +30,7 @@ class MyTextFormField extends StatelessWidget {
           border: OutlineInputBorder(
               borderSide: BorderSide.none,
               borderRadius: BorderRadius.circular(40)),
-          filled: true,
-          fillColor: GeneralAppColor.backGroundIcon,
+        
           contentPadding: EdgeInsets.symmetric(vertical: vertical * .19),
         ),
       ),

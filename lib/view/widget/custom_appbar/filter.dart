@@ -18,7 +18,7 @@ class Filter extends StatelessWidget {
       height: 51,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: GeneralAppColor.backGroundIcon,
+        color: GeneralAppColor.backGroundWidget,
       ),
       child: Image.asset(
         AppImageAsset.filterAppBar,

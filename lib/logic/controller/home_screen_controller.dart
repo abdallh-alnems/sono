@@ -21,10 +21,10 @@ class HomeScreenControllerImp extends HomeScreenController {
   ];
 
   List<String> listOfStrings = [
-    '11'.tr,
-    '12'.tr,
-    '13'.tr,
-    '14'.tr,
+    'BnbHome'.tr,
+    'BnbChats'.tr,
+    'BnbMyAds'.tr,
+    'BnbAccount'.tr,
   ];
 
   List<IconData> listOfIcons = [

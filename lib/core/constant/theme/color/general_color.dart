@@ -18,27 +18,30 @@ class GeneralAppColor {
       900: const Color(0xffe74c3c).withOpacity(1),
     },
   );
-  // ============================= button ======================================
+
+  // ================================ primary ==================================
+
+  static const Color primaryColor = Color(0xffe74c3c);
+
+  // ================================= button ==================================
 
   static const Color buttonColor = Color(0xffe74c3c);
 
   static const Color buttonTextColor = Colors.white;
 
-  // ============================== text =======================================
+  // ================================== text ===================================
 
   static const Color textBodyColor = Color(0xff8e8e8e);
 
-  static const Color lightTextTitle = Color(0xff000000);
+  // ================================ ww ==================================
 
-  static const Color darkTextTitle = Colors.white;
+  static Color backGroundWidget = const Color(0xffE0E0E0);
 
-  static const Color lightTextBody = Color(0xff8e8e8e);
+  // ================================ black and white ==================================
 
-  static const Color black = Color(0xff000000);
-  static const Color disable = Color.fromARGB(255, 198, 195, 195);
-  // static Color backGroundIcon = Colors.grey[300];
-  static Color backGroundIcon = const Color(0xffE0E0E0);
+  static const Color whiteColor = Colors.white;
 
-  static const Color backgroundcolor = Colors.white;
-  static const Color primaryColor = Color(0xffe74c3c);
+  static const Color blackColor = Colors.black;
+
+  static const Color black26Color = Colors.black26;
 }

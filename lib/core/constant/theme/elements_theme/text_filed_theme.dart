@@ -19,7 +19,7 @@ class TTextFormFiledTheme {
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(40.r)),
         filled: true,
-        fillColor: iconColor,
+        fillColor: GeneralAppColor.backGroundWidget,
       );
 
   static InputDecorationTheme darkTextFormFiledTheme() => InputDecorationTheme(
@@ -33,7 +33,6 @@ class TTextFormFiledTheme {
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(40.r)),
         filled: true,
-        fillColor: iconColor,
-        hoverColor: Colors.red,
+        fillColor: GeneralAppColor.backGroundWidget,
       );
 }

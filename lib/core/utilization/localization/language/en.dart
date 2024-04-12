@@ -34,18 +34,26 @@ class EnglishTranslations {
     "tap": "Tap again to exit !",
 
     // ============================ search ==============================
-   
+
     /// sc => search ///
 
     // home
     "scHome": "Search in Sono",
+
+    // ============================ bottom nav bar =============================
+
+    /// Bnb => bottom nav bar ///
+
+    "BnbHome": "Home",
+    "BnbChats": "Chats",
+    "BnbMyAds": "My Ads",
+    "BnbAccount": "Account",
+
+
+    
     // chats
     "16": "search in ",
-    // ============================ bottom nav bar ==============================
-    "11": "Home",
-    "12": "Chats",
-    "13": "My Ads",
-    "14": "Account",
+  
 
     // ============================ exit to app ================================
     "15": "Tap again to exit !",
