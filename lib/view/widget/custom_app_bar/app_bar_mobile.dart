@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../core/responsive/screen_size.dart';
+import 'app_bar_logo.dart';
 import 'filter.dart';
 import '../text_form_field.dart';
-import 'page_appbar.dart';
+import 'app_bar_page.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+class AppBarMobile extends StatelessWidget {
+  const AppBarMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +16,16 @@ class CustomAppBar extends StatelessWidget {
 
     return Column(
       children: [
-       PageAppBar(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            PageAppBar(),
+            AppBarLogo(),
+          ],
+        ),
         Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: horizontal * 4,
+            horizontal: horizontal * 5,
           ),
           child: Row(
             children: [
@@ -26,7 +33,7 @@ class CustomAppBar extends StatelessWidget {
                 hintText: "scHome".tr,
               ),
               SizedBox(
-                width: width * .05,
+                width: width * .07,
               ),
               Filter(),
             ],

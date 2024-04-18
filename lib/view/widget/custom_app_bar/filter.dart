@@ -14,15 +14,15 @@ class Filter extends StatelessWidget {
         double width = ScreenSize.screenWidth;
 
     return Container(
-      width: 51,
-      height: 51,
+      width: 41,
+      height: 41,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: GeneralAppColor.backGroundWidget,
       ),
       child: Image.asset(
         AppImageAsset.filterAppBar,
-        scale: 1.35,
+        scale: 1.39,
       ),
     );
   }

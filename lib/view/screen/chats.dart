@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sono/view/widget/custom_appbar/filter.dart';
+import 'package:sono/view/widget/custom_app_bar/filter.dart';
 import 'package:sono/view/widget/text_form_field.dart';
 
 class Chats extends StatelessWidget {

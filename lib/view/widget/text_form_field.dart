@@ -13,25 +13,24 @@ class MyTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double vertical = ScreenSize.blockSizeVertical;
 
     return Expanded(
-      child: TextFormField(
-        cursorColor: GeneralAppColor.primaryColor,
+      child: Container(
+      //  height: 43.h,
+        child: TextFormField(
+          cursorColor: GeneralAppColor.primaryColor,
+      //  autofocus: false,
+          // controller: mycontroller,
+          // onChanged: onChanged,
+          decoration: InputDecoration(
+            hintText: hintText,
+            prefixIcon: MyIconButton(
+              icon: Icons.search,
+              onPressed: () {},
+            ),
 
-        // controller: mycontroller,
-        // onChanged: onChanged,
-        decoration: InputDecoration(
-          hintText: hintText,
-          prefixIcon: MyIconButton(
-            icon: Icons.search,
-            onPressed: () {},
+                
           ),
-          border: OutlineInputBorder(
-              borderSide: BorderSide.none,
-              borderRadius: BorderRadius.circular(40)),
-        
-          contentPadding: EdgeInsets.symmetric(vertical: vertical * .19),
         ),
       ),
     );

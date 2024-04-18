@@ -20,13 +20,7 @@ class HomeScreen extends StatelessWidget {
     return GetBuilder<HomeScreenControllerImp>(builder: (controller) {
       return TapToExit(
         child: Scaffold(
-          body: ResponsiveLayout(
-            mobileBody: controller.listPage.elementAt(controller.currentPage),
-            tabletBody: controller.listPage.elementAt(controller.currentPage),
-            webBody: Center(
-              child: Text("web"),
-            ),
-          ),
+          body: controller.listPage.elementAt(controller.currentPage),
           bottomNavigationBar:    MyBottomNavBar() ,
         ),
       );

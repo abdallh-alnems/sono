@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import '../../../core/constant/theme/color/general_color.dart';
 import '../../../core/responsive/base_widget.dart';
 import '../../../core/responsive/screen_size.dart';
 import '../../../logic/controller/onboarding_controller.dart';
@@ -24,7 +25,7 @@ class SkipButton extends GetView<OnBoardingControllerImp> {
                 },
                 child: Text(
                   'OnBoSkip'.tr,
-                  style: TextStyle(fontSize:size ? 15.sp : 10.sp),
+                  style: TextStyle(fontSize:size ? 15.sp : 10.sp,color: GeneralAppColor.primaryColor),
                 ))
             : Text(
                 '',
