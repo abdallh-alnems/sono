@@ -2,16 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../core/constant/routes/route.dart';
 import '../../core/responsive/screen_size.dart';
-import '../../core/utilization/change_local.dart';
-import '../widget/utilization/language/custom_button_lang.dart';
+import '../../core/services/change_local.dart';
+import '../widget/language/custom_button_lang.dart';
 
 class Language extends GetView<LocaleController> {
   const Language({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    LocaleController controller = Get.find<LocaleController>();
-
     return Scaffold(
         body: Column(
       mainAxisAlignment: MainAxisAlignment.center,

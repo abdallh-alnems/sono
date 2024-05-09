@@ -23,7 +23,7 @@ class TTextTheme {
         bodyLarge: TextStyle(
           height: height * .0027,
           color: GeneralAppColor.textBodyColor,
-          fontSize: getSizeText(11.sp,7.sp  ,0),
+          fontSize: getSizeText(13.sp,7.sp  ,0),
         ),
       );
 
@@ -38,7 +38,7 @@ class TTextTheme {
         bodyLarge: TextStyle(
           height: height * .0027,
           color: GeneralAppColor.textBodyColor,
-          fontSize: getSizeText(11.sp,7.sp  ,0),
+          fontSize: getSizeText(13.sp,7.sp  ,0),
         ),
       );
 }

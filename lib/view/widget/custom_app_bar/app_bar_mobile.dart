@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../core/responsive/screen_size.dart';
 import 'app_bar_logo.dart';
+import 'app_bar_theme.dart';
 import 'filter.dart';
 import '../text_form_field.dart';
 import 'app_bar_page.dart';
@@ -36,6 +37,7 @@ class AppBarMobile extends StatelessWidget {
                 width: width * .07,
               ),
               Filter(),
+              // AppBarThemes(),
             ],
           ),
         )

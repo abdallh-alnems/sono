@@ -10,8 +10,9 @@ abstract class HomeScreenController extends GetxController {
 }
 
 class HomeScreenControllerImp extends HomeScreenController {
-  
   int currentPage = 0;
+
+  
 
   List<Widget> listPage = [
     HomePage(),
@@ -40,3 +41,4 @@ class HomeScreenControllerImp extends HomeScreenController {
     update();
   }
 }
+

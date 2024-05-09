@@ -1,0 +1,54 @@
+Date : 2024-05-04 02:02:56
+Directory : /home/nims/studio projects/sono
+Total : 14 files,  -8 codes, 0 comments, 0 blanks, all -8 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Dart     |         14 |         -8 |          0 |          0 |         -8 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                  | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                     |         14 |         -8 |          0 |          0 |         -8 |
+| lib                                                                                   |         14 |         -8 |          0 |          0 |         -8 |
+| lib/core                                                                              |         10 |         -1 |          0 |          0 |         -1 |
+| lib/core/localization                                                                 |          3 |         74 |         33 |         44 |        151 |
+| lib/core/localization (Files)                                                         |          1 |         10 |          2 |          3 |         15 |
+| lib/core/localization/language                                                        |          2 |         64 |         31 |         41 |        136 |
+| lib/core/services                                                                     |          3 |         33 |          0 |         12 |         45 |
+| lib/core/utilization                                                                  |          4 |       -108 |        -33 |        -56 |       -197 |
+| lib/core/utilization (Files)                                                          |          1 |        -34 |          0 |        -12 |        -46 |
+| lib/core/utilization/localization                                                     |          3 |        -74 |        -33 |        -44 |       -151 |
+| lib/core/utilization/localization (Files)                                             |          1 |        -10 |         -2 |         -3 |        -15 |
+| lib/core/utilization/localization/language                                            |          2 |        -64 |        -31 |        -41 |       -136 |
+| lib/logic                                                                             |          2 |         -2 |          0 |          2 |          0 |
+| lib/logic/controller                                                                  |          2 |         -2 |          0 |          2 |          0 |
+| lib/view                                                                              |          2 |         -5 |          0 |         -2 |         -7 |
+| lib/view/widget                                                                       |          2 |         -5 |          0 |         -2 |         -7 |
+| lib/view/widget/custom_app_bar                                                        |          2 |         -5 |          0 |         -2 |         -7 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                              | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/nims/studio projects/sono/lib/core/localization/language/ar.dart                | Dart     |         32 |         16 |         23 |         71 |
+| /home/nims/studio projects/sono/lib/core/localization/language/en.dart                | Dart     |         32 |         15 |         18 |         65 |
+| /home/nims/studio projects/sono/lib/core/localization/translation.dart                | Dart     |         10 |          2 |          3 |         15 |
+| /home/nims/studio projects/sono/lib/core/services/change_local_settings.dart          | Dart     |         34 |          0 |         12 |         46 |
+| /home/nims/studio projects/sono/lib/core/services/my_services.dart                    | Dart     |         23 |          0 |          9 |         32 |
+| /home/nims/studio projects/sono/lib/core/services/services.dart                       | Dart     |        -24 |          0 |         -9 |        -33 |
+| /home/nims/studio projects/sono/lib/core/utilization/change_local.dart                | Dart     |        -34 |          0 |        -12 |        -46 |
+| /home/nims/studio projects/sono/lib/core/utilization/localization/language/ar.dart    | Dart     |        -32 |        -16 |        -23 |        -71 |
+| /home/nims/studio projects/sono/lib/core/utilization/localization/language/en.dart    | Dart     |        -32 |        -15 |        -18 |        -65 |
+| /home/nims/studio projects/sono/lib/core/utilization/localization/translation.dart    | Dart     |        -10 |         -2 |         -3 |        -15 |
+| /home/nims/studio projects/sono/lib/logic/controller/home_screen_controller.dart      | Dart     |         -9 |          0 |         -4 |        -13 |
+| /home/nims/studio projects/sono/lib/logic/controller/settings_controller.dart         | Dart     |          7 |          0 |          6 |         13 |
+| /home/nims/studio projects/sono/lib/view/widget/custom_app_bar/app_bar_show_menu.dart | Dart     |         -5 |          0 |         -1 |         -6 |
+| /home/nims/studio projects/sono/lib/view/widget/custom_app_bar/app_bar_tablet.dart    | Dart     |          0 |          0 |         -1 |         -1 |
+| Total                                                                                 |          |         -8 |          0 |          0 |         -8 |
++---------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

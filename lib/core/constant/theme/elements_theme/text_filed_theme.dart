@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import '../../../functions/get_theme_color.dart';
 import '../../../responsive/responsive_text.dart';
 import '../color/general_color.dart';
 

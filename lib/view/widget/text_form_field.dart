@@ -13,13 +13,12 @@ class MyTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Expanded(
       child: Container(
-      //  height: 43.h,
+        //  height: 43.h,
         child: TextFormField(
           cursorColor: GeneralAppColor.primaryColor,
-      //  autofocus: false,
+          //  autofocus: false,
           // controller: mycontroller,
           // onChanged: onChanged,
           decoration: InputDecoration(
@@ -28,8 +27,10 @@ class MyTextFormField extends StatelessWidget {
               icon: Icons.search,
               onPressed: () {},
             ),
-
-                
+            // suffixIcon: MyIconButton(
+            //   icon: Icons.close,
+            //   onPressed: () {},
+            // ),
           ),
         ),
       ),

@@ -33,15 +33,15 @@ class GeneralAppColor {
 
   static const Color textBodyColor = Color(0xff8e8e8e);
 
-  // ================================ ww ==================================
+  // =========================== back ground widget ============================
 
   static Color backGroundWidget = const Color(0xffE0E0E0);
 
-  // ================================ black and white ==================================
+  // ============================= black and white =============================
 
-  static const Color whiteColor = Colors.white;
+   static const Color whiteColor = Colors.white;
 
-  static const Color blackColor = Colors.black;
+  // static const Color blackColor = Colors.black;
 
   static const Color black26Color = Colors.black26;
 }

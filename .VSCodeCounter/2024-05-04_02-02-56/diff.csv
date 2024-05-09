@@ -1,0 +1,16 @@
+"filename", "language", "Dart", "comment", "blank", "total"
+"/home/nims/studio projects/sono/lib/core/localization/language/ar.dart", "Dart", 32, 16, 23, 71
+"/home/nims/studio projects/sono/lib/core/localization/language/en.dart", "Dart", 32, 15, 18, 65
+"/home/nims/studio projects/sono/lib/core/localization/translation.dart", "Dart", 10, 2, 3, 15
+"/home/nims/studio projects/sono/lib/core/services/change_local_settings.dart", "Dart", 34, 0, 12, 46
+"/home/nims/studio projects/sono/lib/core/services/my_services.dart", "Dart", 23, 0, 9, 32
+"/home/nims/studio projects/sono/lib/core/services/services.dart", "Dart", -24, 0, -9, -33
+"/home/nims/studio projects/sono/lib/core/utilization/change_local.dart", "Dart", -34, 0, -12, -46
+"/home/nims/studio projects/sono/lib/core/utilization/localization/language/ar.dart", "Dart", -32, -16, -23, -71
+"/home/nims/studio projects/sono/lib/core/utilization/localization/language/en.dart", "Dart", -32, -15, -18, -65
+"/home/nims/studio projects/sono/lib/core/utilization/localization/translation.dart", "Dart", -10, -2, -3, -15
+"/home/nims/studio projects/sono/lib/logic/controller/home_screen_controller.dart", "Dart", -9, 0, -4, -13
+"/home/nims/studio projects/sono/lib/logic/controller/settings_controller.dart", "Dart", 7, 0, 6, 13
+"/home/nims/studio projects/sono/lib/view/widget/custom_app_bar/app_bar_show_menu.dart", "Dart", -5, 0, -1, -6
+"/home/nims/studio projects/sono/lib/view/widget/custom_app_bar/app_bar_tablet.dart", "Dart", 0, 0, -1, -1
+"Total", "-", -8, 0, 0, -8

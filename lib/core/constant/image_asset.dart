@@ -14,7 +14,7 @@ class AppImageAsset {
   static const String onBoardingImageRentalCar =
       "$rootOnboardingImage/rental_car.png";
   static const String onBoardingImageMaintenance =
-      "$rootOnboardingImage/rental_car.png";
+      "$rootOnboardingImage/maintenance.png";
 
   static const String onBoardingImageMotorcycle =
       "$rootOnboardingImage/motorcycle.png";

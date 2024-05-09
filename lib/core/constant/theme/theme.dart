@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import '../../utilization/change_local.dart';
-import '../../services/services.dart';
+import '../../services/change_local.dart';
+import '../../services/my_services.dart';
 import 'color/general_color.dart';
 import 'color/dark_color.dart';
 import 'color/light_color.dart';
@@ -14,11 +14,9 @@ import 'elements_theme/text_theme.dart';
 
 class AppTheme {
   static LocaleController controller = Get.find<LocaleController>();
-  static String fontFamily =
-      controller.getStorageLang == "ar" ? "Cairo" : "PlayfairDisplay";
-
+ 
   static ThemeData lightTheme() => ThemeData(
-        fontFamily: fontFamily,
+        fontFamily: controller.fontFamily,
         useMaterial3: true,
         brightness: Brightness.light,
         primarySwatch: GeneralAppColor.primarySwatchColor,
@@ -30,7 +28,7 @@ class AppTheme {
       );
 
   static ThemeData darkTheme() => ThemeData(
-        fontFamily: fontFamily,
+        fontFamily: controller.fontFamily,
         useMaterial3: true,
         brightness: Brightness.dark,
         primarySwatch: GeneralAppColor.primarySwatchColor,

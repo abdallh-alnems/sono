@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../constant/routes/route.dart';
-import '../services/services.dart';
+import '../services/my_services.dart';
 
 class MyMiddleWare extends GetMiddleware {
 

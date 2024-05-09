@@ -1,0 +1,26 @@
+"filename", "language", "Dart", "comment", "blank", "total"
+"/home/nims/studio projects/sono/lib/core/constant/theme/color/dark_color.dart", "Dart", 1, -4, -4, -7
+"/home/nims/studio projects/sono/lib/core/constant/theme/color/general_color.dart", "Dart", -1, 1, 0, 0
+"/home/nims/studio projects/sono/lib/core/constant/theme/color/light_color.dart", "Dart", 1, -4, -4, -7
+"/home/nims/studio projects/sono/lib/core/constant/theme/elements_theme/text_filed_theme.dart", "Dart", -2, 0, 0, -2
+"/home/nims/studio projects/sono/lib/core/constant/theme/theme.dart", "Dart", -2, 0, 0, -2
+"/home/nims/studio projects/sono/lib/core/extension/check_dark_theme.dart", "Dart", 4, 0, 2, 6
+"/home/nims/studio projects/sono/lib/core/functions/get_theme_color.dart", "Dart", 2, 0, -2, 0
+"/home/nims/studio projects/sono/lib/core/localization/language/ar.dart", "Dart", 1, 2, -4, -1
+"/home/nims/studio projects/sono/lib/core/localization/language/en.dart", "Dart", 1, 2, -2, 1
+"/home/nims/studio projects/sono/lib/core/services/change_local.dart", "Dart", 44, 0, 8, 52
+"/home/nims/studio projects/sono/lib/core/services/change_local_settings.dart", "Dart", -34, 0, -12, -46
+"/home/nims/studio projects/sono/lib/core/services/my_services.dart", "Dart", 0, 0, -1, -1
+"/home/nims/studio projects/sono/lib/logic/bindings/initial_bindings.dart", "Dart", 2, 1, 6, 9
+"/home/nims/studio projects/sono/lib/logic/controller/settings_controller.dart", "Dart", -2, 0, -2, -4
+"/home/nims/studio projects/sono/lib/view/screen/language.dart", "Dart", -1, 0, -1, -2
+"/home/nims/studio projects/sono/lib/view/widget/custom_app_bar/app_bar_language.dart", "Dart", 21, 0, 5, 26
+"/home/nims/studio projects/sono/lib/view/widget/custom_app_bar/app_bar_menu.dart", "Dart", 61, 0, 6, 67
+"/home/nims/studio projects/sono/lib/view/widget/custom_app_bar/app_bar_mobile.dart", "Dart", 1, 0, 0, 1
+"/home/nims/studio projects/sono/lib/view/widget/custom_app_bar/app_bar_show_menu.dart", "Dart", -62, 0, -6, -68
+"/home/nims/studio projects/sono/lib/view/widget/custom_app_bar/app_bar_tablet.dart", "Dart", 3, 0, 0, 3
+"/home/nims/studio projects/sono/lib/view/widget/custom_app_bar/app_bar_theme.dart", "Dart", 16, 0, 3, 19
+"/home/nims/studio projects/sono/lib/view/widget/custom_app_bar/filter.dart", "Dart", 7, 0, 0, 7
+"/home/nims/studio projects/sono/lib/view/widget/language/custom_button_lang.dart", "Dart", 26, 0, 3, 29
+"/home/nims/studio projects/sono/lib/view/widget/utilization/language/custom_button_lang.dart", "Dart", -26, 0, -3, -29
+"Total", "-", 61, -2, -8, 51

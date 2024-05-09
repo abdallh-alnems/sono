@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LightAppColor {
+  // ============================ fore ground Color ============================
 
-  // ============================== text =======================================
-
-  // static const Color textTitle = Colors.black;
-
-  // static const Color textBody = Colors.white;
-
-  // ========================  elevated button =================================
-
-  // static const Color buttonTextColor = Colors.black;
+  static const Color foregroundColor = Colors.black;
 }

@@ -7,10 +7,10 @@ import 'core/constant/routes/get_page.dart';
 import 'core/constant/theme/theme.dart';
 import 'core/functions/get_theme_color.dart';
 import 'core/responsive/base_widget.dart';
-import 'core/utilization/change_local.dart';
-import 'core/utilization/localization/translation.dart';
+import 'core/services/change_local.dart';
+import 'core/localization/translation.dart';
 import 'core/responsive/screen_size.dart';
-import 'core/services/services.dart';
+import 'core/services/my_services.dart';
 import 'logic/bindings/initial_bindings.dart';
 import 'view/screen/language.dart';
 
