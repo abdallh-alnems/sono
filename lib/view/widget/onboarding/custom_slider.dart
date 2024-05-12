@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import '../../../core/constant/theme/color/general_color.dart';
 import '../../../core/responsive/base_widget.dart';
-import '../../../core/responsive/responsive_layout.dart';
 import '../../../core/responsive/screen_size.dart';
 import '../../../data/data_source/static/onboarding_static.dart';
 import '../../../logic/controller/onboarding_controller.dart';

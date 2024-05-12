@@ -1,31 +1,31 @@
-import 'dart:math';
+// import 'dart:math';
 
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
 
-class ScreenUtil {
-  static ScreenUtil _instance = ScreenUtil._();
+// class ScreenUtil {
+//   static ScreenUtil _instance = ScreenUtil._();
 
-  factory ScreenUtil() => _instance;
+//   factory ScreenUtil() => _instance;
 
-  ScreenUtil._();
+//   ScreenUtil._();
 
-  double setWidth(num width) {
-    // Your implementation for setting width
-    return width.toDouble();
-  }
+//   double setWidth(num width) {
+//     // Your implementation for setting width
+//     return width.toDouble();
+//   }
 
-  double setHeight(num height) {
-    // Your implementation for setting height
-    return height.toDouble();
-  }
+//   double setHeight(num height) {
+//     // Your implementation for setting height
+//     return height.toDouble();
+//   }
 
-  double setSp(num fontSize) {
-    // Your implementation for setting font size
-    return fontSize.toDouble();
-  }
+//   double setSp(num fontSize) {
+//     // Your implementation for setting font size
+//     return fontSize.toDouble();
+//   }
 
-  double radius(num r) {
-    // Your implementation for setting radius
-    return r.toDouble();
-  }
-}
+//   double radius(num r) {
+//     // Your implementation for setting radius
+//     return r.toDouble();
+//   }
+// }

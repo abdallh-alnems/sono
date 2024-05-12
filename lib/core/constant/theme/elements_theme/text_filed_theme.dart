@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:sono/uzzzzzz/size_extension.dart';
 import '../../../responsive/responsive_text.dart';
 import '../color/general_color.dart';
 
