@@ -10,7 +10,7 @@ class AppBarThemes extends GetView<LocaleController> {
   Widget build(BuildContext context) {
     return IconButton(
       onPressed: () {
-        controller.changModeTheme();
+        controller.toggleTheme();
       },
       icon: Icon(context.exDarkMode ? Icons.light_mode : Icons.dark_mode),
     );

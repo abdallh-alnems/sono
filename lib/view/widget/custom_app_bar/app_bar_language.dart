@@ -12,9 +12,9 @@ class AppBarLanguage extends GetView<LocaleController> {
       onTap: () {
 
         if (Get.locale!.languageCode == 'ar') {
-          controller.changeLang("en");
+          controller.changeLanguage(AppLanguage.en);
         } else {
-          controller.changeLang("ar");
+          controller.changeLanguage(AppLanguage.ar);
         }
       },
       child: Text(

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import '../../core/constant/theme/color/general_color.dart';
-import '../../core/functions/get_theme_color.dart';
-import '../../core/responsive/screen_size.dart';
 import 'my_icon_button.dart';
 
 class MyTextFormField extends StatelessWidget {
@@ -16,6 +13,7 @@ class MyTextFormField extends StatelessWidget {
         //  height: 43.h,
         child: TextFormField(
           cursorColor: GeneralAppColor.primaryColor,
+          // cursorWidth: 10,
           //  autofocus: false,
           // controller: mycontroller,
           // onChanged: onChanged,

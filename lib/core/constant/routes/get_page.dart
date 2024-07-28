@@ -18,7 +18,7 @@ List<GetPage<dynamic>> routes = [
   // ============================== root =======================================
 // middlewares: [MyMiddleWare()]
   GetPage(
-      name: "/", page: () => const Language(), ),
+      name: "/", page: () => const MainScreen(), ),
       
   GetPage(name: AppRoute.onBoarding, page: () => OnBoarding()),
 
